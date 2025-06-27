@@ -45,8 +45,9 @@ app.use(express.static(`${__dirname}/public`));
 route(app);
 routeAdmin(app);
 
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server is running on http://localhost:${port}`);
+// });
 
 
+module.exports = app;
